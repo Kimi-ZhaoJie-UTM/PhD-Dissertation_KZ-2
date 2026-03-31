@@ -104,8 +104,32 @@
         
         .date-location {
             font-size: 14pt;
-            margin-bottom: 100px;
+            margin-bottom: 25px;
             letter-spacing: 1px;
+        }
+        
+        /* QR Code Section */
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 80px;
+            padding: 10px;
+        }
+        
+        .qr-code {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .qr-text {
+            font-size: 10pt;
+            font-style: italic;
+            opacity: 0.7;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
         }
         
         .publisher {
@@ -135,6 +159,10 @@
             .main-title {
                 font-size: 24pt;
             }
+            .qr-code {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
@@ -155,13 +183,20 @@
             Collection of Scientific Papers based on the results of an XXVIII international scientific conference
         </div>
         
-        <!-- 点击标题进入第二页（假设第二页文件名为 page2.html） -->
         <a href="page2.html" class="main-title" data-i18n="title">
             Scientific achievements of the third millennium
         </a>
         
         <div class="date-location" data-i18n="date">
             August 15, 2025 New York, USA
+        </div>
+        
+        <!-- QR Code Section - 使用相对路径，需确保图片与HTML同目录 -->
+        <div class="qr-section">
+            <img src="5f4e184e-bf07-491d-bc8d-41f28ad11110.png" 
+                 alt="QR Code" 
+                 class="qr-code">
+            <div class="qr-text" data-i18n="scan">Scan for online version</div>
         </div>
         
         <div class="click-hint" data-i18n="hint">Click title to enter →</div>
@@ -179,6 +214,7 @@
                 subtitle: 'Collection of Scientific Papers based on the results of an XXVIII international scientific conference',
                 title: 'Scientific achievements of the third millennium',
                 date: 'August 15, 2025 New York, USA',
+                scan: 'Scan for online version',
                 publisher: 'LJournal Scientific Publishing Center',
                 location: 'New York, 2025',
                 hint: 'Click title to enter →'
@@ -188,6 +224,7 @@
                 subtitle: 'Сборник научных трудов по результатам XXVIII международной научной конференции',
                 title: 'Научные достижения третьего тысячелетия',
                 date: '15 августа 2025 года, Нью-Йорк, США',
+                scan: 'Сканируйте для онлайн-версии',
                 publisher: 'Научно-издательский центр LJournal',
                 location: 'Нью-Йорк, 2025',
                 hint: 'Нажмите на заголовок для входа →'
@@ -197,6 +234,7 @@
                 subtitle: '第XXVIII届国际科学会议成果学术论文集',
                 title: '第三千年的科学成就',
                 date: '2025年8月15日 美国纽约',
+                scan: '扫码查看在线版本',
                 publisher: 'LJournal 科学出版中心',
                 location: '纽约，2025',
                 hint: '点击标题进入 →'
@@ -204,7 +242,6 @@
         };
         
         function changeLang(lang) {
-            // 更新按钮状态
             document.querySelectorAll('.lang-btn').forEach((btn, index) => {
                 btn.classList.remove('active');
                 if ((lang === 'en' && index === 0) || 
@@ -214,7 +251,6 @@
                 }
             });
             
-            // 更新文本
             const elements = document.querySelectorAll('[data-i18n]');
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
