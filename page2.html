@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific achievements of the third millennium - 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+            font-size: 12pt;
+            line-height: 1.6;
+        }
+        
+        /* Language Switcher - Left side */
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px;
+            border: 1px solid #000;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        
+        .lang-btn {
+            padding: 4px 10px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .lang-btn.active {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Navigation - Right side */
+        .top-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 999;
+        }
+        
+        .nav-btn {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            color: #000;
+            text-decoration: none;
+            border: 1px solid #000;
+            padding: 5px 15px;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        
+        .nav-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Page Content */
+        .page-content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 60px 60px 60px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header: Scientific achievements of the third millennium -2- */
+        .page-header {
+            text-align: center;
+            font-size: 11pt;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        /* Main Title */
+        .content-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Subtitle: Collection of scientific papers... */
+        .subtitle-conference {
+            text-align: center;
+            font-size: 12pt;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            letter-spacing: 0.3px;
+        }
+        
+        /* Body Text */
+        .content-body {
+            text-align: justify;
+            line-height: 1.8;
+            flex: 1;
+            font-size: 12pt;
+        }
+        
+        .content-body p {
+            margin-bottom: 15px;
+            text-indent: 20px;
+        }
+        
+        /* Footer with complete UDC */
+        .page-footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #000;
+            font-size: 10pt;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: 0.5px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-content {
+                padding: 80px 30px 60px 30px;
+            }
+            .lang-switcher {
+                top: 10px;
+                left: 10px;
+            }
+            .top-nav {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Switcher - Left side -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="changeLang('en')">EN</button>
+        <button class="lang-btn" onclick="changeLang('ru')">RU</button>
+        <button class="lang-btn" onclick="changeLang('zh')">中文</button>
+    </div>
+
+    <!-- Navigation - Right side -->
+    <div class="top-nav">
+        <button class="nav-btn" onclick="goBack()">← Back to Cover</button>
+        <button class="nav-btn" onclick="goNext()">Next Page →</button>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Header Line (唯一包含-2-的地方) -->
+        <div class="page-header" data-i18n="header">Scientific achievements of the third millennium -2-</div>
+        <!-- Subtitle -->
+        <div class="subtitle-conference" data-i18n="subtitleConf">
+            Collection of scientific papers based on the results of an XXVIII international scientific conference «Scientific achievements of the third millennium» August 15, 2025, New York, USA – 68
+        </div>
+        
+        <!-- Body Paragraphs -->
+        <div class="content-body">
+            <p data-i18n="para1">
+                The collection of scientific papers <em>Scientific achievements of the third millennium</em> is formed based on the results of the scientific and practical conference of the same name, which has traditionally been held by the organizers since 2017 and is a very important scientific event for dozens of scientists from different countries and scientific schools.
+            </p>
+            
+            <p data-i18n="para2">
+                Covering a wide geography of its holding, the <em>Scientific achievements of the third millennium</em> conference allows scientists from Russia and all over the world to present their scientific research at a high international level.
+            </p>
+            
+            <p data-i18n="para3">
+                The information published in the collection is presented in the original version. Spelling and punctuation preserved. Responsibility for the information presented to the public lies with the authors of the articles.
+            </p>
+            
+            <p data-i18n="para4">
+                Metadata and full texts of journal articles are transferred to the ELIBRARY scientometric database.
+            </p>
+            
+            <p data-i18n="para5">
+                Electronic layouts of the edition are available free of charge on the website of the Scientific Center «Science Conference» – https://scienceconference.ru/
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div class="page-footer">
+            <span>© Scientific center «Science Conference»</span>
+            <span>UDC 001.1</span>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                header: 'Scientific achievements of the third millennium -2-',
+                title: 'Scientific achievements of the third millennium',
+                subtitleConf: 'Collection of scientific papers based on the results of an XXVIII international scientific conference «Scientific achievements of the third millennium» August 15, 2025, New York, USA – 68',
+                para1: 'The collection of scientific papers <em>Scientific achievements of the third millennium</em> is formed based on the results of the scientific and practical conference of the same name, which has traditionally been held by the organizers since 2017 and is a very important scientific event for dozens of scientists from different countries and scientific schools.',
+                para2: 'Covering a wide geography of its holding, the <em>Scientific achievements of the third millennium</em> conference allows scientists from Russia and all over the world to present their scientific research at a high international level.',
+                para3: 'The information published in the collection is presented in the original version. Spelling and punctuation preserved. Responsibility for the information presented to the public lies with the authors of the articles.',
+                para4: 'Metadata and full texts of journal articles are transferred to the ELIBRARY scientometric database.',
+                para5: 'Electronic layouts of the edition are available free of charge on the website of the Scientific Center «Science Conference» – https://scienceconference.ru/'
+            },
+            ru: {
+                header: 'Научные достижения третьего тысячелетия -2-',
+                title: 'Научные достижения третьего тысячелетия',
+                subtitleConf: 'Сборник научных трудов по результатам XXVIII международной научной конференции «Научные достижения третьего тысячелетия» 15 августа 2025 г., Нью-Йорк, США – 68',
+                para1: 'Сборник научных трудов <em>Научные достижения третьего тысячелетия</em> сформирован на основе результатов научно-практической конференции того же названия, которая традиционно проводится организаторами с 2017 года и является очень важным научным событием для десятков ученых из разных стран и научных школ.',
+                para2: 'Охватывая широкую географию своего проведения, конференция <em>Научные достижения третьего тысячелетия</em> позволяет ученым из России и всего мира представить свои научные исследования на высоком международном уровне.',
+                para3: 'Информация, опубликованная в сборнике, представлена в оригинальной версии. Орфография и пунктуация сохранены. Ответственность за представленную общественности информацию лежит на авторах статей.',
+                para4: 'Метаданные и полные тексты журнальных статей передаются в наукометрическую базу данных ELIBRARY.',
+                para5: 'Электронные макеты издания доступны бесплатно на сайте Научного центра «Science Conference» – https://scienceconference.ru/'
+            },
+            zh: {
+                header: '第三千年的科学成就 -2-',
+                title: '第三千年的科学成就',
+                subtitleConf: '第XXVIII届国际科学会议«第三千年的科学成就»成果学术论文集 2025年8月15日，美国纽约 – 68页',
+                para1: '《第三千年的科学成就》学术论文集是根据同名科学实践会议的成果编制的。该会议自2017年起由主办方定期举办，是各国数十位科学家和科学学派参与的非常重要的科学活动。',
+                para2: '会议覆盖广泛的地理范围，使来自俄罗斯和世界各地的科学家能够在高国际水平上展示他们的科学研究成果。',
+                para3: '文集中发布的信息以原始版本呈现。拼写和标点符号保留原样。向公众展示的信息责任由文章作者承担。',
+                para4: '期刊文章的元数据和全文将转入ELIBRARY科学计量数据库。',
+                para5: '出版物的电子版面可在科学中心«Science Conference»网站上免费获取 – https://scienceconference.ru/'
+            }
+        };
+        
+        function changeLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach((btn, index) => {
+                btn.classList.remove('active');
+                if ((lang === 'en' && index === 0) || 
+                    (lang === 'ru' && index === 1) || 
+                    (lang === 'zh' && index === 2)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+        
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+        
+        function goNext() {
+            window.location.href = 'page3.html';
+        }
+    </script>
+</body>
+</html>
