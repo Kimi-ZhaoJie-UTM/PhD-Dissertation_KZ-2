@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific achievements of the third millennium - 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+            font-size: 12pt;
+            line-height: 1.4;
+        }
+        
+        /* Language Switcher - Left side */
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px;
+            border: 1px solid #000;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        
+        .lang-btn {
+            padding: 4px 10px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .lang-btn.active {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Navigation - Right side */
+        .top-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 999;
+        }
+        
+        .nav-btn {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            color: #000;
+            text-decoration: none;
+            border: 1px solid #000;
+            padding: 5px 15px;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        
+        .nav-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Page Content */
+        .page-content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 60px 60px 60px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header: Scientific achievements of the third millennium -3- */
+        .page-header {
+            text-align: center;
+            font-size: 11pt;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        /* Main Title: CONTENTS */
+        .content-title {
+            font-size: 16pt;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            flex: 1;
+            font-size: 11pt;
+            line-height: 1.5;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            margin-top: 15px;
+        }
+        
+        .section-title {
+            flex: 1;
+        }
+        
+        .section-page {
+            margin-left: 10px;
+        }
+        
+        .article {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+            padding-left: 0;
+            text-align: left;
+        }
+        
+        .article-text {
+            flex: 1;
+            padding-right: 5px;
+        }
+        
+        .article-dots {
+            flex: 1;
+            border-bottom: 1px dotted #000;
+            margin: 0 5px 4px 5px;
+            min-width: 20px;
+        }
+        
+        .article-page {
+            margin-left: 5px;
+            min-width: 20px;
+            text-align: right;
+        }
+        
+        .article-continuation {
+            padding-left: 20px;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+        
+        /* Clickable Article Link */
+        .article-link {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px dotted #000;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .article-link:hover {
+            background: #f0f0f0;
+            border-bottom: 1px solid #000;
+        }
+        
+        /* Footer with UDC */
+        .page-footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #000;
+            font-size: 10pt;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: 0.5px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-content {
+                padding: 80px 30px 60px 30px;
+            }
+            .lang-switcher {
+                top: 10px;
+                left: 10px;
+            }
+            .top-nav {
+                top: 10px;
+                right: 10px;
+            }
+            .article-dots {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Switcher - Left side -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="changeLang('en')">EN</button>
+        <button class="lang-btn" onclick="changeLang('ru')">RU</button>
+        <button class="lang-btn" onclick="changeLang('zh')">中文</button>
+    </div>
+
+    <!-- Navigation - Right side -->
+    <div class="top-nav">
+        <button class="nav-btn" onclick="goBack()">← Previous Page</button>
+        <button class="nav-btn" onclick="goNext()">Next Page →</button>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Header Line -->
+        <div class="page-header" data-i18n="header">Scientific achievements of the third millennium -3-</div>
+        
+        <!-- Title -->
+        <div class="content-title" data-i18n="title">Contents</div>
+        
+        <!-- Table of Contents -->
+        <div class="toc">
+            <!-- Section I -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec1">Section I. Computer Science and Engineering</span>
+                    <span class="section-page"></span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art1">Averbukh A.M., Belov D.A. Development and analysis of the incremental Lazy Theta* algorithm for autonomous navigation in dynamic environments</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">4</span>
+                </div>
+                <div class="article-continuation" data-i18n="art1cont">for autonomous navigation in dynamic environments</div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art2">Horbenko Y.A. Empowering Digital Government with Human-Centered AI: Building Secure and Scalable Public Services</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">6</span>
+                </div>
+                <div class="article-continuation" data-i18n="art2cont">Scalable Public Services</div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art3">Kolchin R.T. A Key Management Scheme for Intelligent Systems Based on Blockchain Technology</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">11</span>
+                </div>
+            </div>
+
+            <!-- Section II -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec2">Section II. Radio Engineering and Communication</span>
+                    <span class="section-page">15</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art4">Odenbach I.A., Odenbach S.D. Technological telephone communication in railway transport</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">15</span>
+                </div>
+            </div>
+
+            <!-- Section III -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec3">Section III. Economic Sciences</span>
+                    <span class="section-page">28</span>
+                </div>
+                <div class="article">
+                    <span class="article-text">
+                        <!-- Clickable link added here -->
+                        <a href="page4.html" class="article-link" data-i18n="art5">Zhao J. Navigating Financial Opportunities and Risks in the EU's Connectivity Strategy</a>
+                    </span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">28</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art6">Торосян Т.Л. Риски цифровизации при реабилитации пациентов, перенесших инсульт</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">33</span>
+                </div>
+            </div>
+
+            <!-- Section IV -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec4">Section IV. Pedagogy</span>
+                    <span class="section-page">37</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art7">Kuznetsova A.N. Theoretical justification of the technology of speech formation in students with a foreign language of Russian</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">37</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art8">Алишбиева А.Р., Абдурахманова У.Х., Барханоева Р.И., Гаджиева П.Д. Об актуальности проблемы преступности среди несовершеннолетних в современных условиях</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">45</span>
+                </div>
+            </div>
+
+            <!-- Section V -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec5">Section V. Linguistics and Literary Studies</span>
+                    <span class="section-page">48</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art9">Чотчаева И.А., Курбангаджиев К.Р., Касимов М.Ю., Муцалова Б.А. Внедрение цифровых технологий в английском языке</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">48</span>
+                </div>
+            </div>
+
+            <!-- Section VI -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec6">Section VI. Political Sciences</span>
+                    <span class="section-page">51</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art10">Арчаков М.К. Историческая русофобия и ее проявления в современных идеологических установках польских праворадикалов</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">51</span>
+                </div>
+            </div>
+
+            <!-- Section VII -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec7">Section VII. Medical Sciences</span>
+                    <span class="section-page">58</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art11">Бильгильдеев М.Г., Осмоналиев И.Ж., Байкеев Р.Ф. Анализ курации пациентов с ампутацией конечностей в Республике Татарстан</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">58</span>
+                </div>
+                <div class="article">
+                    <span class="article-text" data-i18n="art12">Сейц А.А., Сулина Е.И. Определение чувствительности к антисептическим лекарственным средствам штаммов Staphylococcus aureus</span>
+                    <span class="article-dots"></span>
+                    <span class="article-page">62</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="page-footer">
+            <span>© Scientific center «Science Conference»</span>
+            <span>UDC 001.1</span>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                header: 'Scientific achievements of the third millennium -3-',
+                title: 'Contents',
+                sec1: 'Section I. Computer Science and Engineering',
+                art1: 'Averbukh A.M., Belov D.A. Development and analysis of the incremental Lazy Theta* algorithm for autonomous navigation in dynamic environments',
+                art1cont: 'for autonomous navigation in dynamic environments',
+                art2: 'Horbenko Y.A. Empowering Digital Government with Human-Centered AI: Building Secure and Scalable Public Services',
+                art2cont: 'Scalable Public Services',
+                art3: 'Kolchin R.T. A Key Management Scheme for Intelligent Systems Based on Blockchain Technology',
+                sec2: 'Section II. Radio Engineering and Communication',
+                art4: 'Odenbach I.A., Odenbach S.D. Technological telephone communication in railway transport',
+                sec3: 'Section III. Economic Sciences',
+                art5: 'Zhao J. Navigating Financial Opportunities and Risks in the EU\'s Connectivity Strategy',
+                art6: 'Торосян Т.Л. Риски цифровизации при реабилитации пациентов, перенесших инсульт',
+                sec4: 'Section IV. Pedagogy',
+                art7: 'Kuznetsova A.N. Theoretical justification of the technology of speech formation in students with a foreign language of Russian',
+                art8: 'Алишбиева А.Р., Абдурахманова У.Х., Барханоева Р.И., Гаджиева П.Д. Об актуальности проблемы преступности среди несовершеннолетних в современных условиях',
+                sec5: 'Section V. Linguistics and Literary Studies',
+                art9: 'Чотчаева И.А., Курбангаджиев К.Р., Касимов М.Ю., Муцалова Б.А. Внедрение цифровых технологий в английском языке',
+                sec6: 'Section VI. Political Sciences',
+                art10: 'Арчаков М.К. Историческая русофобия и ее проявления в современных идеологических установках польских праворадикалов',
+                sec7: 'Section VII. Medical Sciences',
+                art11: 'Бильгильдеев М.Г., Осмоналиев И.Ж., Байкеев Р.Ф. Анализ курации пациентов с ампутацией конечностей в Республике Татарстан',
+                art12: 'Сейц А.А., Сулина Е.И. Определение чувствительности к антисептическим лекарственным средствам штаммов Staphylococcus aureus'
+            },
+            ru: {
+                header: 'Научные достижения третьего тысячелетия -3-',
+                title: 'Содержание',
+                sec1: 'Раздел I. Информатика и инженерия',
+                art1: 'Авербух А.М., Белов Д.А. Разработка и анализ инкрементального алгоритма Lazy Theta* для автономной навигации в динамических средах',
+                art1cont: 'для автономной навигации в динамических средах',
+                art2: 'Горбенко Я.А. Расширение возможностей цифрового правительства с помощью ИИ, ориентированного на человека: создание безопасных и масштабируемых государственных услуг',
+                art2cont: 'Масштабируемые государственные услуги',
+                art3: 'Колчин Р.Т. Схема управления ключами для интеллектуальных систем на основе технологии блокчейн',
+                sec2: 'Раздел II. Радиотехника и связь',
+                art4: 'Оденбах И.А., Оденбах С.Д. Технологическая телефонная связь на железнодорожном транспорте',
+                sec3: 'Раздел III. Экономические науки',
+                art5: 'Чжао Дж. Навигация по финансовым возможностям и рискам в стратегии связности ЕС',
+                art6: 'Торосян Т.Л. Риски цифровизации при реабилитации пациентов, перенесших инсульт',
+                sec4: 'Раздел IV. Педагогика',
+                art7: 'Кузнецова А.Н. Теоретическое обоснование технологии формирования речи у обучающихся с неродным русским языком',
+                art8: 'Алишбиева А.Р., Абдурахманова У.Х., Барханоева Р.И., Гаджиева П.Д. Об актуальности проблемы преступности среди несовершеннолетних в современных условиях',
+                sec5: 'Раздел V. Лингвистика и литературоведение',
+                art9: 'Чотчаева И.А., Курбангаджиев К.Р., Касимов М.Ю., Муцалова Б.А. Внедрение цифровых технологий в английском языке',
+                sec6: 'Раздел VI. Политические науки',
+                art10: 'Арчаков М.К. Историческая русофобия и ее проявления в современных идеологических установках польских праворадикалов',
+                sec7: 'Раздел VII. Медицинские науки',
+                art11: 'Бильгильдеев М.Г., Осмоналиев И.Ж., Байкеев Р.Ф. Анализ курации пациентов с ампутацией конечностей в Республике Татарстан',
+                art12: 'Сейц А.А., Сулина Е.И. Определение чувствительности к антисептическим лекарственным средствам штаммов Staphylococcus aureus'
+            },
+            zh: {
+                header: '第三千年的科学成就 -3-',
+                title: '目录',
+                sec1: '第一部分 计算机科学与工程',
+                art1: '阿韦尔布赫 A.M.，贝洛夫 D.A. 用于动态环境中自主导航的增量式Lazy Theta*算法的开发与分析',
+                art1cont: '用于动态环境中自主导航',
+                art2: '戈尔边科 Y.A. 利用以人为本的AI赋能数字政府：构建安全可扩展的公共服务',
+                art2cont: '可扩展的公共服务',
+                art3: '科尔钦 R.T. 基于区块链技术的智能系统密钥管理方案',
+                sec2: '第二部分 无线电工程与通信',
+                art4: '奥登巴赫 I.A.，奥登巴赫 S.D. 铁路运输中的技术电话通信',
+                sec3: '第三部分 经济科学',
+                art5: '赵 J. 欧盟连通性战略中的金融机遇与风险导航',
+                art6: '托罗相 T.L. 中风患者康复数字化风险',
+                sec4: '第四部分 教育学',
+                art7: '库兹涅佐娃 A.N. 非母语俄语学生言语形成技术的理论论证',
+                art8: '阿利什比耶娃 A.R.，阿卜杜拉赫马诺娃 U.Kh.，巴尔哈诺娃 R.I.，加吉耶娃 P.D. 论现代条件下未成年人犯罪问题的现实意义',
+                sec5: '第五部分 语言学与文学研究',
+                art9: '乔恰耶娃 I.A.，库尔班加济耶夫 K.R.，卡西莫夫 M.Yu.，穆察洛娃 B.A. 英语数字化技术的实施',
+                sec6: '第六部分 政治学',
+                art10: '阿尔恰科夫 M.K. 历史恐俄症及其在现代波兰右翼激进分子意识形态中的表现',
+                sec7: '第七部分 医学科学',
+                art11: '比尔吉尔季耶夫 M.G.，奥斯莫纳利耶夫 I.Zh.，拜基耶夫 R.F. 鞑靼斯坦共和国肢体截肢患者治疗分析',
+                art12: '赛茨 A.A.，苏利娜 E.I. 金黄色葡萄球菌菌株对抗菌药物敏感性测定'
+            }
+        };
+        
+        function changeLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach((btn, index) => {
+                btn.classList.remove('active');
+                if ((lang === 'en' && index === 0) || 
+                    (lang === 'ru' && index === 1) || 
+                    (lang === 'zh' && index === 2)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+        
+        function goBack() {
+            window.location.href = 'page2.html';
+        }
+        
+        function goNext() {
+            window.location.href = 'page4.html';
+        }
+    </script>
+</body>
+</html>
