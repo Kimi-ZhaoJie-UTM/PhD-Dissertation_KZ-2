@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific achievements of the third millennium - 28</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+            font-size: 12pt;
+            line-height: 1.6;
+        }
+        
+        /* Language Switcher - Left side */
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px;
+            border: 1px solid #000;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        
+        .lang-btn {
+            padding: 4px 10px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .lang-btn.active {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Navigation - Right side */
+        .top-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 999;
+        }
+        
+        .nav-btn {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            color: #000;
+            text-decoration: none;
+            border: 1px solid #000;
+            padding: 5px 15px;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        
+        .nav-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Page Content */
+        .page-content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 60px 60px 60px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header: Scientific achievements of the third millennium -28- */
+        .page-header {
+            text-align: center;
+            font-size: 11pt;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        /* Section Title */
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Article Header */
+        .article-header {
+            margin-bottom: 15px;
+        }
+        
+        .author-line {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .affiliation {
+            font-size: 11pt;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        /* Article Title */
+        .article-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Abstract Label */
+        .abstract-label {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        
+        /* Body Text */
+        .content-body {
+            text-align: justify;
+            line-height: 1.8;
+            flex: 1;
+            font-size: 12pt;
+        }
+        
+        .content-body p {
+            margin-bottom: 15px;
+            text-indent: 0;
+        }
+        
+        .content-body p:first-child {
+            margin-bottom: 15px;
+        }
+        
+        /* Keywords */
+        .keywords {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-size: 12pt;
+            text-align: justify;
+            line-height: 1.8;
+        }
+        
+        .keywords-label {
+            font-weight: bold;
+        }
+        
+        /* Introduction Section */
+        .introduction-title {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Footer with UDC */
+        .page-footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #000;
+            font-size: 10pt;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: 0.5px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-content {
+                padding: 80px 30px 60px 30px;
+            }
+            .lang-switcher {
+                top: 10px;
+                left: 10px;
+            }
+            .top-nav {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Switcher - Left side -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="changeLang('en')">EN</button>
+        <button class="lang-btn" onclick="changeLang('ru')">RU</button>
+        <button class="lang-btn" onclick="changeLang('zh')">中文</button>
+    </div>
+
+    <!-- Navigation - Right side -->
+    <div class="top-nav">
+        <button class="nav-btn" onclick="goBack()">← Previous Page</button>
+        <button class="nav-btn" onclick="goNext()">Next Page →</button>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Header Line -->
+        <div class="page-header" data-i18n="header">Scientific achievements of the third millennium -28-</div>
+        
+        <!-- Section Title -->
+        <div class="section-title" data-i18n="section">Section III. Economic Sciences</div>
+        
+        <!-- Article Header -->
+        <div class="article-header">
+            <div class="author-line" data-i18n="author">Zhao J.</div>
+            <div class="affiliation" data-i18n="affiliation">Al-Farabi Kazakh National University (Kazakhstan, Almaty)</div>
+        </div>
+        
+        <!-- Article Title -->
+        <div class="article-title" data-i18n="title">Navigating Financial Opportunities and Risks in the EU's Connectivity Strategy</div>
+        
+        <!-- English Abstract -->
+        <div class="abstract-label" data-i18n="abstractLabel">Abstract</div>
+        
+        <div class="content-body">
+            <p data-i18n="abstractText">
+                Abstract The EU's Connectivity Strategy, exemplified by initiatives like the Global Gateway, seeks to enhance transnational infrastructure integration while balancing financial opportunities and systemic risks. This study analyzes the strategy's dual role in fostering economic cohesion through capital mobilization mechanisms – such as public-private partnerships, blended finance models, and multilateral funding by institutions like the EIB and EBRD – while addressing vulnerabilities linked to geopolitical fragmentation, debt sustainability, and operational inefficiencies. Key financial opportunities arise in digital infrastructure, sustainable energy networks, and trade corridor development, which bolster the Eurozone's stability and geopolitical influence. However, risks such as currency volatility, regulatory misalignment, and asymmetric information threaten project viability. Strategic recommendations emphasize adaptive governance frameworks, including scenario planning, policy harmonization, and enhanced stakeholder engagement through robust corporate governance. The findings underscore the imperative of aligning financial innovation with proactive risk management to achieve resilient transnational integration.
+            </p>
+            
+            <!-- English Keywords -->
+            <div class="keywords">
+                <span class="keywords-label" data-i18n="keywordsLabel">Keywords:</span>
+                <span data-i18n="keywords">EU connectivity strategy, financial opportunities and risks, public-private partnerships, geopolitical fragmentation, transnational infrastructure</span>
+            </div>
+            
+            <!-- Russian Abstract (Аннотация) -->
+            <div class="abstract-label" style="margin-top: 20px;" data-i18n="ruAbstractLabel">Аннотация</div>
+            
+            <p data-i18n="ruAbstractText">
+                Стратегия ЕС в области соединяемости, примером которой служат такие инициативы, как «Глобальные ворота», направлена на усиление транснациональной инфраструктурной интеграции при соблюдении баланса между финансовыми возможностями и системными рисками. В данном исследовании анализируется двойная роль стратегии в укреплении экономической сплоченности с помощью механизмов мобилизации капитала, таких как государственно-частные партнерства, модели смешанного финансирования и многостороннее финансирование со стороны таких институтов, как ЕИБ и ЕБРР, при одновременном устранении уязвимостей, связанных с геополитической фрагментацией, устойчивостью долга и операционной неэффективностью. Ключевые финансовые возможности открываются в области цифровой инфраструктуры, устойчивых энергетических сетей и развития торговых коридоров, которые укрепляют стабильность и геополитическое влияние Еврозоны. Однако такие риски, как волатильность валют, несогласованность регулирования и асимметричная информация, угрожают жизнеспособности проектов. В стратегических рекомендациях особое внимание уделяется адаптивным механизмам управления, включая сценарное планирование, гармонизацию политики и расширение взаимодействия с заинтересованными сторонами посредством надежного корпоративного управления. Полученные результаты подчеркивают необходимость согласования финансовых инноваций с проактивным управлением рисками для достижения устойчивой транснациональной интеграции.
+            </p>
+            
+            <!-- Russian Keywords (Ключевые слова) -->
+            <div class="keywords">
+                <span class="keywords-label" data-i18n="ruKeywordsLabel">Ключевые слова:</span>
+                <span data-i18n="ruKeywords">стратегия соединяемости ЕС, финансовые возможности и риски, государственно-частное партнерство (ГЧП), геополитическая фрагментация, транснациональное финансирование</span>
+            </div>
+            
+            <!-- Introduction -->
+            <div class="introduction-title" data-i18n="introLabel">Introduction</div>
+            
+            <p data-i18n="introText">
+                The European Union's Connectivity Strategy, epitomized by initiatives such as the Global Gateway, represents a pivotal effort to reshape transnational infrastructure networks while advancing
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div class="page-footer">
+            <span>© Scientific center «Science Conference»</span>
+            <span>UDC 001.1</span>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                header: 'Scientific achievements of the third millennium -28-',
+                section: 'Section III. Economic Sciences',
+                author: 'Zhao J.',
+                affiliation: 'Al-Farabi Kazakh National University (Kazakhstan, Almaty)',
+                title: 'Navigating Financial Opportunities and Risks in the EU\'s Connectivity Strategy',
+                abstractLabel: 'Abstract',
+                abstractText: 'Abstract The EU\'s Connectivity Strategy, exemplified by initiatives like the Global Gateway, seeks to enhance transnational infrastructure integration while balancing financial opportunities and systemic risks. This study analyzes the strategy\'s dual role in fostering economic cohesion through capital mobilization mechanisms – such as public-private partnerships, blended finance models, and multilateral funding by institutions like the EIB and EBRD – while addressing vulnerabilities linked to geopolitical fragmentation, debt sustainability, and operational inefficiencies. Key financial opportunities arise in digital infrastructure, sustainable energy networks, and trade corridor development, which bolster the Eurozone\'s stability and geopolitical influence. However, risks such as currency volatility, regulatory misalignment, and asymmetric information threaten project viability. Strategic recommendations emphasize adaptive governance frameworks, including scenario planning, policy harmonization, and enhanced stakeholder engagement through robust corporate governance. The findings underscore the imperative of aligning financial innovation with proactive risk management to achieve resilient transnational integration.',
+                keywordsLabel: 'Keywords:',
+                keywords: 'EU connectivity strategy, financial opportunities and risks, public-private partnerships, geopolitical fragmentation, transnational infrastructure',
+                ruAbstractLabel: 'Аннотация',
+                ruAbstractText: 'Стратегия ЕС в области соединяемости, примером которой служат такие инициативы, как «Глобальные ворота», направлена на усиление транснациональной инфраструктурной интеграции при соблюдении баланса между финансовыми возможностями и системными рисками. В данном исследовании анализируется двойная роль стратегии в укреплении экономической сплоченности с помощью механизмов мобилизации капитала, таких как государственно-частные партнерства, модели смешанного финансирования и многостороннее финансирование со стороны таких институтов, как ЕИБ и ЕБРР, при одновременном устранении уязвимостей, связанных с геополитической фрагментацией, устойчивостью долга и операционной неэффективностью. Ключевые финансовые возможности открываются в области цифровой инфраструктуры, устойчивых энергетических сетей и развития торговых коридоров, которые укрепляют стабильность и геополитическое влияние Еврозоны. Однако такие риски, как волатильность валют, несогласованность регулирования и асимметричная информация, угрожают жизнеспособности проектов. В стратегических рекомендациях особое внимание уделяется адаптивным механизмам управления, включая сценарное планирование, гармонизацию политики и расширение взаимодействия с заинтересованными сторонами посредством надежного корпоративного управления. Полученные результаты подчеркивают необходимость согласования финансовых инноваций с проактивным управлением рисками для достижения устойчивой транснациональной интеграции.',
+                ruKeywordsLabel: 'Ключевые слова:',
+                ruKeywords: 'стратегия соединяемости ЕС, финансовые возможности и риски, государственно-частное партнерство (ГЧП), геополитическая фрагментация, транснациональное финансирование',
+                introLabel: 'Introduction',
+                introText: 'The European Union\'s Connectivity Strategy, epitomized by initiatives such as the Global Gateway, represents a pivotal effort to reshape transnational infrastructure networks while advancing'
+            },
+            ru: {
+                header: 'Научные достижения третьего тысячелетия -28-',
+                section: 'Раздел III. Экономические науки',
+                author: 'Чжао Дж.',
+                affiliation: 'Казахский национальный университет имени аль-Фараби (Казахстан, Алма-Ата)',
+                title: 'Навигация по финансовым возможностям и рискам в стратегии связности ЕС',
+                abstractLabel: 'Abstract',
+                abstractText: 'Абстракт Стратегия связности ЕС, примером которой служат такие инициативы, как Global Gateway, направлена на усиление транснациональной инфраструктурной интеграции при соблюдении баланса между финансовыми возможностями и системными рисками. Это исследование анализирует двойную роль стратегии в укреплении экономической сплоченности через механизмы мобилизации капитала - такие как государственно-частные партнерства, модели смешанного финансирования и многостороннее финансирование институтами, такими как ЕИБ и ЕБРР - при решении уязвимостей, связанных с геополитической фрагментацией, долговой устойчивостью и операционной неэффективностью. Ключевые финансовые возможности возникают в цифровой инфраструктуре, устойчивых энергетических сетях и развитии торговых коридоров, которые укрепляют стабильность и геополитическое влияние Еврозоны. Однако такие риски, как волатильность валют, несогласованность регулирования и асимметричная информация, угрожают жизнеспособности проектов. Стратегические рекомендации подчеркивают адаптивные рамки управления, включая сценарное планирование, гармонизацию политики и усиленное вовлечение заинтересованных сторон через надежное корпоративное управление. Результаты подчеркивают необходимость согласования финансовых инноваций с упреждающим управлением рисками для достижения устойчивой транснациональной интеграции.',
+                keywordsLabel: 'Keywords:',
+                keywords: 'стратегия связности ЕС, финансовые возможности и риски, государственно-частное партнерство, геополитическая фрагментация, транснациональная инфраструктура',
+                ruAbstractLabel: 'Аннотация',
+                ruAbstractText: 'Стратегия ЕС в области соединяемости, примером которой служат такие инициативы, как «Глобальные ворота», направлена на усиление транснациональной инфраструктурной интеграции при соблюдении баланса между финансовыми возможностями и системными рисками. В данном исследовании анализируется двойная роль стратегии в укреплении экономической сплоченности с помощью механизмов мобилизации капитала, таких как государственно-частные партнерства, модели смешанного финансирования и многостороннее финансирование со стороны таких институтов, как ЕИБ и ЕБРР, при одновременном устранении уязвимостей, связанных с геополитической фрагментацией, устойчивостью долга и операционной неэффективностью. Ключевые финансовые возможности открываются в области цифровой инфраструктуры, устойчивых энергетических сетей и развития торговых коридоров, которые укрепляют стабильность и геополитическое влияние Еврозоны. Однако такие риски, как волатильность валют, несогласованность регулирования и асимметричная информация, угрожают жизнеспособности проектов. В стратегических рекомендациях особое внимание уделяется адаптивным механизмам управления, включая сценарное планирование, гармонизацию политики и расширение взаимодействия с заинтересованными сторонами посредством надежного корпоративного управления. Полученные результаты подчеркивают необходимость согласования финансовых инноваций с проактивным управлением рисками для достижения устойчивой транснациональной интеграции.',
+                ruKeywordsLabel: 'Ключевые слова:',
+                ruKeywords: 'стратегия соединяемости ЕС, финансовые возможности и риски, государственно-частное партнерство (ГЧП), геополитическая фрагментация, транснациональное финансирование',
+                introLabel: 'Введение',
+                introText: 'Стратегия Европейского союза в области соединяемости, примером которой служат такие инициативы, как «Глобальные ворота», представляет собой важнейшую попытку изменить транснациональные инфраструктурные сети при продвижении'
+            },
+            zh: {
+                header: '第三千年的科学成就 -28-',
+                section: '第三部分 经济科学',
+                author: '赵 J.',
+                affiliation: '阿尔法拉比哈萨克斯坦国立大学（哈萨克斯坦，阿拉木图）',
+                title: '欧盟连通性战略中的金融机遇与风险导航',
+                abstractLabel: 'Abstract',
+                abstractText: '欧盟的连通性战略，以"全球门户"等倡议为代表，旨在加强跨国基础设施整合，同时平衡金融机遇与系统性风险。本研究分析了该战略在促进经济凝聚力方面的双重作用，通过资本调动机制——如公私合作伙伴关系、混合融资模式以及欧洲投资银行和欧洲复兴开发银行等多边机构的资助——同时解决与地缘政治分裂、债务可持续性和运营效率低下相关的脆弱性。数字基础设施、可持续能源网络和贸易走廊发展带来了关键的金融机遇，增强了欧元区的稳定性和地缘政治影响力。然而，货币波动、监管不一致和信息不对称等风险威胁着项目的可行性。战略建议强调适应性治理框架，包括情景规划、政策协调以及通过健全的公司治理加强利益相关者参与。研究结果强调了将金融创新与积极风险管理相结合以实现弹性跨国融合的必要性。',
+                keywordsLabel: 'Keywords:',
+                keywords: 'EU connectivity strategy, financial opportunities and risks, public-private partnerships, geopolitical fragmentation, transnational infrastructure',
+                ruAbstractLabel: 'Аннотация',
+                ruAbstractText: 'Стратегия ЕС в области соединяемости, примером которой служат такие инициативы, как «Глобальные ворота», направлена на усиление транснациональной инфраструктурной интеграции при соблюдении баланса между финансовыми возможностями и системными рисками...',
+                ruKeywordsLabel: 'Ключевые слова:',
+                ruKeywords: 'стратегия соединяемости ЕС, финансовые возможности и риски...',
+                introLabel: '引言',
+                introText: '欧盟的连通性战略，以"全球门户"等倡议为代表，代表着重塑跨国基础设施网络的重要努力，同时推进'
+            }
+        };
+        
+        function changeLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach((btn, index) => {
+                btn.classList.remove('active');
+                if ((lang === 'en' && index === 0) || 
+                    (lang === 'ru' && index === 1) || 
+                    (lang === 'zh' && index === 2)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+        
+        function goBack() {
+            window.location.href = 'page3.html';
+        }
+        
+        function goNext() {
+            window.location.href = 'page29.html';
+        }
+    </script>
+</body>
+</html>
