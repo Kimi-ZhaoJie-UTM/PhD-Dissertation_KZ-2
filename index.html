@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Achievements of the Third Millennium</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+            font-size: 14pt;
+            line-height: 1.4;
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px;
+            border: 1px solid #000;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        
+        .lang-btn {
+            padding: 5px 12px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .lang-btn.active {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Cover Page */
+        .cover {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+            position: relative;
+            text-align: center;
+        }
+        
+        .center-name {
+            font-size: 16pt;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            font-size: 14pt;
+            max-width: 500px;
+            margin-bottom: 50px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+        }
+        
+        .main-title {
+            font-size: 36pt;
+            font-weight: bold;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 15px;
+            line-height: 1.3;
+            text-decoration: none;
+            color: #000;
+            display: block;
+        }
+        
+        .main-title:hover {
+            opacity: 0.7;
+            border-bottom: 2px solid #000;
+        }
+        
+        .date-location {
+            font-size: 14pt;
+            margin-bottom: 100px;
+            letter-spacing: 1px;
+        }
+        
+        .publisher {
+            position: absolute;
+            bottom: 60px;
+            font-size: 12pt;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        .publisher-line {
+            margin-bottom: 5px;
+        }
+        
+        .click-hint {
+            position: absolute;
+            bottom: 130px;
+            font-size: 11pt;
+            opacity: 0.5;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .cover {
+                padding: 40px 30px;
+            }
+            .main-title {
+                font-size: 24pt;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="changeLang('en')">English</button>
+        <button class="lang-btn" onclick="changeLang('ru')">Русский</button>
+        <button class="lang-btn" onclick="changeLang('zh')">中文</button>
+    </div>
+
+    <!-- Cover Page -->
+    <div class="cover">
+        <div class="center-name" data-i18n="center">Scientific center «Science Conference»</div>
+        
+        <div class="subtitle" data-i18n="subtitle">
+            Collection of Scientific Papers based on the results of an XXVIII international scientific conference
+        </div>
+        
+        <!-- 点击标题进入第二页（假设第二页文件名为 page2.html） -->
+        <a href="page2.html" class="main-title" data-i18n="title">
+            Scientific achievements of the third millennium
+        </a>
+        
+        <div class="date-location" data-i18n="date">
+            August 15, 2025 New York, USA
+        </div>
+        
+        <div class="click-hint" data-i18n="hint">Click title to enter →</div>
+        
+        <div class="publisher">
+            <div class="publisher-line" data-i18n="publisher">LJournal Scientific Publishing Center</div>
+            <div data-i18n="location">New York, 2025</div>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                center: 'Scientific center «Science Conference»',
+                subtitle: 'Collection of Scientific Papers based on the results of an XXVIII international scientific conference',
+                title: 'Scientific achievements of the third millennium',
+                date: 'August 15, 2025 New York, USA',
+                publisher: 'LJournal Scientific Publishing Center',
+                location: 'New York, 2025',
+                hint: 'Click title to enter →'
+            },
+            ru: {
+                center: 'Научный центр «Science Conference»',
+                subtitle: 'Сборник научных трудов по результатам XXVIII международной научной конференции',
+                title: 'Научные достижения третьего тысячелетия',
+                date: '15 августа 2025 года, Нью-Йорк, США',
+                publisher: 'Научно-издательский центр LJournal',
+                location: 'Нью-Йорк, 2025',
+                hint: 'Нажмите на заголовок для входа →'
+            },
+            zh: {
+                center: '科学中心 "Science Conference"',
+                subtitle: '第XXVIII届国际科学会议成果学术论文集',
+                title: '第三千年的科学成就',
+                date: '2025年8月15日 美国纽约',
+                publisher: 'LJournal 科学出版中心',
+                location: '纽约，2025',
+                hint: '点击标题进入 →'
+            }
+        };
+        
+        function changeLang(lang) {
+            // 更新按钮状态
+            document.querySelectorAll('.lang-btn').forEach((btn, index) => {
+                btn.classList.remove('active');
+                if ((lang === 'en' && index === 0) || 
+                    (lang === 'ru' && index === 1) || 
+                    (lang === 'zh' && index === 2)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // 更新文本
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
