@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific achievements of the third millennium - 31</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+            font-size: 12pt;
+            line-height: 1.4;
+        }
+        
+        /* Language Switcher - Left side */
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px;
+            border: 1px solid #000;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        
+        .lang-btn {
+            padding: 4px 10px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .lang-btn.active {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Navigation - Right side */
+        .top-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 999;
+        }
+        
+        .nav-btn {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            color: #000;
+            text-decoration: none;
+            border: 1px solid #000;
+            padding: 5px 15px;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        
+        .nav-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        /* Page Content */
+        .page-content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 60px 60px 60px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header: Scientific achievements of the third millennium -31- */
+        .page-header {
+            text-align: center;
+            font-size: 11pt;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        /* Body text styling */
+        .body-text {
+            font-size: 11pt;
+            line-height: 1.5;
+            text-align: justify;
+            text-indent: 20px;
+            margin-bottom: 12pt;
+        }
+        
+        .no-indent {
+            text-indent: 0;
+        }
+        
+        /* Section headers */
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        
+        /* References styling */
+        .references {
+            margin-top: 30px;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+        
+        .references-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        
+        .ref-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .ref-item {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            text-indent: -20px;
+        }
+        
+        /* Footer */
+        .page-footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #000;
+            font-size: 10pt;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: 0.5px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-content {
+                padding: 80px 30px 60px 30px;
+            }
+            .lang-switcher {
+                top: 10px;
+                left: 10px;
+            }
+            .top-nav {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Switcher - Left side -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="changeLang('en')">EN</button>
+        <button class="lang-btn" onclick="changeLang('ru')">RU</button>
+        <button class="lang-btn" onclick="changeLang('zh')">中文</button>
+    </div>
+
+    <!-- Navigation - Right side -->
+    <div class="top-nav">
+        <button class="nav-btn" onclick="goBack()">← Previous Page</button>
+        <button class="nav-btn" onclick="goNext()">Next Page →</button>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Header Line -->
+        <div class="page-header" data-i18n="header">Scientific achievements of the third millennium -31-</div>
+        
+        <!-- Body Content -->
+        <div class="body-text no-indent" data-i18n="p1">
+            Policy coordination emerges as a critical lever for aligning the EU's strategic objectives with the heterogeneous priorities of member states and third-country partners. Central to this effort is the harmonization of technical standards and ESG criteria, which reduces transactional friction and fosters interoperability across jurisdictions. By establishing supranational platforms for regulatory dialogue, the EU can mitigate fragmentation risks while incentivizing non-member states to adopt compatible frameworks.[5] Concurrently, the synchronization of financial priorities among member states – particularly regarding capital allocation for digital and green infrastructure – ensures cohesive implementation, avoiding redundancies and enhancing resource efficiency.
+        </div>
+        
+        <div class="body-text" data-i18n="p2">
+            Stakeholder engagement must transcend transactional relationships, evolving into structured partnerships underpinned by robust corporate governance principles. Multilateral institutions such as the EBRD and EIB should institutionalize their role as de-risking intermediaries, offering guarantees and co-investment platforms to attract private capital while insulating projects from political volatilities. Public-private partnerships (PPPs) require enhanced transparency protocols and accountability mechanisms to address asymmetric information, ensuring equitable risk-sharing between public entities and private investors. This tripartite approach – melding financial innovation, policy coherence, and institutional trust – positions the Connectivity Strategy not merely as an infrastructure initiative but as a resilient architecture for sustainable geopolitical and economic integration.
+        </div>
+        
+        <!-- Section Header: Conclusion -->
+        <div class="section-title" data-i18n="conclusion_title">Conclusion</div>
+        
+        <div class="body-text no-indent" data-i18n="p3">
+            The EU's Connectivity Strategy exemplifies the intricate interplay between infrastructure-driven geopolitics and financial innovation, revealing both transformative potential and systemic vulnerabilities. Central to its efficacy is the synergistic alignment of connectivity objectives with advanced capital mobilization mechanisms, wherein public-private partnerships and multilateral financing instruments act as conduits for sustainable integration. Proactive risk management emerges as a non-negotiable imperative, transcending traditional financial hedging to encompass geopolitical foresight and institutional adaptability. The strategy's success hinges on its capacity to harmonize divergent regulatory regimes, mitigate asymmetric information, and insulate projects from volatile macroeconomic cycles, thereby transforming theoretical frameworks into actionable governance frameworks.
+        </div>
+        
+        <div class="body-text" data-i18n="p4">
+            Future research must prioritize longitudinal assessments of connectivity-driven financial flows, particularly their long-term impacts on debt sustainability and regional economic cohesion. The evolving dynamics of sanctions regimes, currency diversification, and ESG compliance warrant deeper scrutiny to refine risk mitigation models. Furthermore, the role of digital infrastructure in redefining geopolitical alliances – through data sovereignty and cybersecurity frameworks – remains underexplored, offering fertile ground for interdisciplinary inquiry. By bridging empirical gaps in transnational finance literature, such studies would strengthen the conceptual foundations of connectivity strategies, ensuring their resilience in an era of escalating geopolitical fragmentation and economic uncertainty.
+        </div>
+        
+        <!-- References -->
+        <div class="references" data-i18n="references">
+            <div class="references-title">***</div>
+            <ol class="ref-list">
+                <li class="ref-item">1. Bajakić I. Navigating the future of EU's digital finance and open financial strategic autonomy through strategic regulatory management // Balkan Social Science Review. – 2024. – Vol. 24, No. 24. – Pp. 7-31.</li>
+                <li class="ref-item">2. Zhivko M.A., Vivchar S.F. Strategies for navigating in the fragmentation conditions of global finance and economic digitalization: contemporary trends in TNC management // Problems of Economics. – 2023. – No. 3. – Pp. 15-24.</li>
+                <li class="ref-item">3. Okano-Heijmans M. The EU's Connectivity Strategy 2.0: Global Gateway in the Indo-Pacific // The Transformation of the Liberal International Order: Evolutions and Limitations. – Singapore: Springer Nature Singapore, 2023. – Pp. 23-53.</li>
+                <li class="ref-item">4. Davydenko L.N., Litvinyuk A.I. The experience of functioning of Euroregions as a form of cross-border cooperation in the EU and CIS // Economics, Modelling, Forecasting. – 2021. – No. 15. – P. 12.</li>
+                <li class="ref-item">5. Stekić N., Nikolić J. Conflicting visions of connectivity: EU's and China's infrastructural agendas for the Western Balkans // National Interest. – 2025. – Vol. 50, No. 1.</li>
+            </ol>
+        </div>
+        
+        <!-- Footer -->
+        <div class="page-footer">
+            <span>© Scientific center «Science Conference»</span>
+            <span>UDC 001.1</span>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                header: 'Scientific achievements of the third millennium -31-',
+                p1: 'Policy coordination emerges as a critical lever for aligning the EU\'s strategic objectives with the heterogeneous priorities of member states and third-country partners. Central to this effort is the harmonization of technical standards and ESG criteria, which reduces transactional friction and fosters interoperability across jurisdictions. By establishing supranational platforms for regulatory dialogue, the EU can mitigate fragmentation risks while incentivizing non-member states to adopt compatible frameworks.[5] Concurrently, the synchronization of financial priorities among member states – particularly regarding capital allocation for digital and green infrastructure – ensures cohesive implementation, avoiding redundancies and enhancing resource efficiency.',
+                p2: 'Stakeholder engagement must transcend transactional relationships, evolving into structured partnerships underpinned by robust corporate governance principles. Multilateral institutions such as the EBRD and EIB should institutionalize their role as de-risking intermediaries, offering guarantees and co-investment platforms to attract private capital while insulating projects from political volatilities. Public-private partnerships (PPPs) require enhanced transparency protocols and accountability mechanisms to address asymmetric information, ensuring equitable risk-sharing between public entities and private investors. This tripartite approach – melding financial innovation, policy coherence, and institutional trust – positions the Connectivity Strategy not merely as an infrastructure initiative but as a resilient architecture for sustainable geopolitical and economic integration.',
+                conclusion_title: 'Conclusion',
+                p3: 'The EU\'s Connectivity Strategy exemplifies the intricate interplay between infrastructure-driven geopolitics and financial innovation, revealing both transformative potential and systemic vulnerabilities. Central to its efficacy is the synergistic alignment of connectivity objectives with advanced capital mobilization mechanisms, wherein public-private partnerships and multilateral financing instruments act as conduits for sustainable integration. Proactive risk management emerges as a non-negotiable imperative, transcending traditional financial hedging to encompass geopolitical foresight and institutional adaptability. The strategy\'s success hinges on its capacity to harmonize divergent regulatory regimes, mitigate asymmetric information, and insulate projects from volatile macroeconomic cycles, thereby transforming theoretical frameworks into actionable governance frameworks.',
+                p4: 'Future research must prioritize longitudinal assessments of connectivity-driven financial flows, particularly their long-term impacts on debt sustainability and regional economic cohesion. The evolving dynamics of sanctions regimes, currency diversification, and ESG compliance warrant deeper scrutiny to refine risk mitigation models. Furthermore, the role of digital infrastructure in redefining geopolitical alliances – through data sovereignty and cybersecurity frameworks – remains underexplored, offering fertile ground for interdisciplinary inquiry. By bridging empirical gaps in transnational finance literature, such studies would strengthen the conceptual foundations of connectivity strategies, ensuring their resilience in an era of escalating geopolitical fragmentation and economic uncertainty.',
+                references: '<div class="references-title">***</div><ol class="ref-list"><li class="ref-item">1. Bajakić I. Navigating the future of EU\'s digital finance and open financial strategic autonomy through strategic regulatory management // Balkan Social Science Review. – 2024. – Vol. 24, No. 24. – Pp. 7-31.</li><li class="ref-item">2. Zhivko M.A., Vivchar S.F. Strategies for navigating in the fragmentation conditions of global finance and economic digitalization: contemporary trends in TNC management // Problems of Economics. – 2023. – No. 3. – Pp. 15-24.</li><li class="ref-item">3. Okano-Heijmans M. The EU\'s Connectivity Strategy 2.0: Global Gateway in the Indo-Pacific // The Transformation of the Liberal International Order: Evolutions and Limitations. – Singapore: Springer Nature Singapore, 2023. – Pp. 23-53.</li><li class="ref-item">4. Davydenko L.N., Litvinyuk A.I. The experience of functioning of Euroregions as a form of cross-border cooperation in the EU and CIS // Economics, Modelling, Forecasting. – 2021. – No. 15. – P. 12.</li><li class="ref-item">5. Stekić N., Nikolić J. Conflicting visions of connectivity: EU\'s and China\'s infrastructural agendas for the Western Balkans // National Interest. – 2025. – Vol. 50, No. 1.</li></ol>'
+            },
+            ru: {
+                header: 'Научные достижения третьего тысячелетия -31-',
+                p1: 'Координация политики выступает критически важным рычагом для согласования стратегических целей ЕС с разнородными приоритетами государств-членов и партнерских стран третьих стран. Центральное место в этих усилиях занимает гармонизация технических стандартов и критериев ESG, что снижает транзакционные издержки и способствует взаимодействию между юрисдикциями. Создавая наднациональные платформы для регуляторного диалога, ЕС может смягчить риски фрагментации, стимулируя не членов ЕС к принятию совместимых рамок.[5] Одновременно синхронизация финансовых приоритетов среди государств-членов – особенно в отношении распределения капитала на цифровую и зеленую инфраструктуру – обеспечивает согласованную реализацию, избегая дублирования и повышая эффективность использования ресурсов.',
+                p2: 'Вовлечение заинтересованных сторон должно выходить за рамки транзакционных отношений, эволюционируя в структурированные партнерства, подкрепленные прочными принципами корпоративного управления. Многосторонние учреждения, такие как ЕБРР и ЕИБ, должны институционализировать свою роль посредников по снижению рисков, предлагая гарантии и платформы для совместных инвестиций для привлечения частного капитала, изолируя проекты от политической волатильности. Государственно-частные партнерства (ГЧП) требуют усиленных протоколов прозрачности и механизмов подотчетности для решения проблем асимметрии информации, обеспечивая справедливое распределение рисков между публичными субъектами и частными инвесторами. Этот трехсторонний подход – сочетающий финансовые инновации, политическую согласованность и институциональное доверие – позиционирует Стратегию связности не просто как инфраструктурную инициативу, но как устойчивую архитектуру для устойчивой геополитической и экономической интеграции.',
+                conclusion_title: 'Заключение',
+                p3: 'Стратегия связности ЕС является примером сложного взаимодействия между инфраструктурной геополитикой и финансовыми инновациями, раскрывая как трансформативный потенциал, так и системные уязвимости. Центральное место в ее эффективности занимает синергетическое согласование целей связности с продвинутыми механизмами мобилизации капитала, при котором государственно-частные партнерства и многосторонние финансовые инструменты выступают каналами для устойчивой интеграции. Проактивное управление рисками выступает как непреложный императив, выходящий за рамки традиционного финансового хеджирования и охватывающий геополитическое предвидение и институциональную адаптивность. Успех стратегии зависит от ее способности гармонизировать расходящиеся регуляторные режимы, смягчать асимметрию информации и изолировать проекты от волатильных макроэкономических циклов, тем самым превращая теоретические рамки в действенные механизмы управления.',
+                p4: 'Будущие исследования должны приоритизировать продольные оценки финансовых потоков, связанных со связностью, особенно их долгосрочное влияние на долговую устойчивость и региональную экономическую сплоченность. Эволюционирующая динамика санкционных режимов, диверсификации валют и соблюдения критериев ESG требует более глубокого изучения для совершенствования моделей смягчения рисков. Кроме того, роль цифровой инфраструктуры в переосмыслении геополитических альянсов – через суверенитет данных и рамки кибербезопасности – остается недостаточно изученной, предлагая плодородную почву для междисциплинарных исследований. Преодолевая эмпирические пробелы в литературе по транснациональным финансам, такие исследования укрепили бы концептуальные основы стратегий связности, обеспечивая их устойчивость в эпоху эскалации геополитической фрагментации и экономической неопределенности.',
+                references: '<div class="references-title">***</div><ol class="ref-list"><li class="ref-item">1. Bajakić I. Navigating the future of EU\'s digital finance and open financial strategic autonomy through strategic regulatory management // Balkan Social Science Review. – 2024. – Vol. 24, No. 24. – Pp. 7-31.</li><li class="ref-item">2. Zhivko M.A., Vivchar S.F. Strategies for navigating in the fragmentation conditions of global finance and economic digitalization: contemporary trends in TNC management // Problems of Economics. – 2023. – No. 3. – Pp. 15-24.</li><li class="ref-item">3. Okano-Heijmans M. The EU\'s Connectivity Strategy 2.0: Global Gateway in the Indo-Pacific // The Transformation of the Liberal International Order: Evolutions and Limitations. – Singapore: Springer Nature Singapore, 2023. – Pp. 23-53.</li><li class="ref-item">4. Davydenko L.N., Litvinyuk A.I. The experience of functioning of Euroregions as a form of cross-border cooperation in the EU and CIS // Economics, Modelling, Forecasting. – 2021. – No. 15. – P. 12.</li><li class="ref-item">5. Stekić N., Nikolić J. Conflicting visions of connectivity: EU\'s and China\'s infrastructural agendas for the Western Balkans // National Interest. – 2025. – Vol. 50, No. 1.</li></ol>'
+            },
+            zh: {
+                header: '第三千年的科学成就 -31-',
+                p1: '政策协调成为协调欧盟战略目标与成员国及第三国合作伙伴异质性优先事项的关键杠杆。这项工作的核心在于协调技术标准和ESG标准，这减少了交易摩擦并促进了跨司法管辖区的互操作性。通过建立超国家监管对话平台，欧盟可以减轻碎片化风险，同时激励非成员国采用兼容的框架。[5]同时，成员国之间财政优先事项的同步——特别是关于数字和绿色基础设施的资本配置——确保了协调一致的执行，避免冗余并提高资源效率。',
+                p2: '利益相关者参与必须超越交易关系，演变为以健全公司治理原则为基础的结构性伙伴关系。欧洲复兴开发银行和欧洲投资银行等多边机构应将其作为降风险中介机构的角色制度化，提供担保和联合投资平台以吸引私人资本，同时使项目免受政治波动的影响。公私合作伙伴关系（PPP）需要加强透明度协议和问责机制，以解决信息不对称问题，确保公共实体和私人投资者之间公平的风险分担。这种三方融合的方法——融合金融创新、政策一致性和制度信任——将连通性战略定位为不仅仅是基础设施倡议，而是可持续地缘政治和经济一体化的弹性架构。',
+                conclusion_title: '结论',
+                p3: '欧盟连通性战略体现了基础设施驱动的地缘政治与金融创新之间复杂的相互作用，既展示了变革潜力，也揭示了系统性脆弱性。其效力的核心在于将连通性目标与先进的资本动员机制进行协同协调，其中公私合作伙伴关系和多边融资工具充当可持续整合的渠道。主动风险管理成为一项不可妥协的必要条件，超越传统的金融对冲，涵盖地缘政治远见和制度适应性。该战略的成功取决于其协调不同监管制度、减轻信息不对称并使项目免受波动宏观经济周期影响的能力，从而将理论框架转化为可操作的治理框架。',
+                p4: '未来研究必须优先考虑对连通性驱动资金流的纵向评估，特别是其对债务可持续性和区域经济凝聚力的长期影响。制裁制度、货币多元化和ESG合规的不断演变动态值得更深入审查，以完善风险缓解模型。此外，数字基础设施在重新定义地缘政治联盟方面的作用——通过数据主权和网络安全框架——仍未得到充分探索，为跨学科研究提供了沃土。通过弥合跨国金融文献中的经验差距，此类研究将加强连通性战略的概念基础，确保其在地缘政治碎片化升级和经济不确定性时代的韧性。',
+                references: '<div class="references-title">***</div><ol class="ref-list"><li class="ref-item">1. Bajakić I. 通过战略监管管理导航欧盟数字金融和开放金融战略自主的未来 // 巴尔干社会科学评论. – 2024. – 第24卷，第24期. – 第7-31页.</li><li class="ref-item">2. Zhivko M.A., Vivchar S.F. 在全球金融碎片化和经济数字化条件下导航的策略：跨国公司管理的当代趋势 // 经济问题. – 2023. – 第3期. – 第15-24页.</li><li class="ref-item">3. Okano-Heijmans M. 欧盟连通性战略2.0：印太地区的全球门户 // 自由国际秩序的演变与局限. – 新加坡：Springer Nature Singapore, 2023. – 第23-53页.</li><li class="ref-item">4. Davydenko L.N., Litvinyuk A.I. 欧洲区域作为欧盟和独联体跨境合作形式的运作经验 // 经济学、建模、预测. – 2021. – 第15期. – 第12页.</li><li class="ref-item">5. Stekić N., Nikolić J. 连通性的冲突愿景：欧盟和中国在西巴尔干的基础设施议程 // 国家利益. – 2025. – 第50卷，第1期.</li></ol>'
+            }
+        };
+        
+        function changeLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach((btn, index) => {
+                btn.classList.remove('active');
+                if ((lang === 'en' && index === 0) || 
+                    (lang === 'ru' && index === 1) || 
+                    (lang === 'zh' && index === 2)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    if (key === 'references') {
+                        el.innerHTML = translations[lang][key];
+                    } else {
+                        el.textContent = translations[lang][key];
+                    }
+                }
+            });
+        }
+        
+        function goBack() {
+            window.location.href = 'page30.html';
+        }
+        
+        function goNext() {
+            window.location.href = 'page32.html';
+        }
+    </script>
+</body>
+</html>
